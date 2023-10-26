@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* Variáveis */
-:root{
+:root {
   --primary-font-family: Poppins, Sans-serif, Arial, Helvetica;
   --secondary-font-family: JetBrains Mono, Sans-serif, Arial, Helvetica;
   --primary-color: #fff;
 }
 
 /* Tags Genéricas */
-html{
+html {
   overflow-x: hidden;
 }
 
@@ -57,11 +57,10 @@ img {
   width: 100%;
   height: 500px;
   object-fit: fill;
-  position: relative;
 }
 
 /* Título da página */
-.main_title{
+.main_title {
   position: absolute;
   font-family: var(--primary-font-family);
   letter-spacing: 4px;
@@ -83,7 +82,7 @@ img {
 }
 
 /* Encomenda */
-.main_form{
+.main_form {
   padding-bottom: 32px;
 }
 
@@ -96,9 +95,9 @@ img {
   padding-bottom: 32px;
 }
 
-.card_depoimentos {
+/* .card_depoimentos {
   margin: 0 48px 0 48px;
-}
+} */
 
 .img_depoimentos {
   border-radius: 50%;
@@ -109,14 +108,14 @@ img {
 
 /* Sobre nós */
 .card_sobre {
-  transition: .3s ease;
+  transition: 0.3s ease;
   cursor: pointer;
 }
 .card_sobre:hover {
   transform: scale3d(1.1, 1.1, 1);
 }
 
-.img_cars{
+.img_cars {
   height: 500px;
   width: 100%;
   object-fit: cover;
@@ -125,7 +124,6 @@ img {
   height: 300px;
   object-fit: cover;
 }
-
 
 .text_card {
   color: var(--primary-color);
@@ -142,7 +140,7 @@ img {
   width: 24px;
   height: 24px;
 
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .social_icons:hover {
