@@ -80,7 +80,7 @@
 
     <main>
       <!-- Agendamento -->
-      <div
+      <section
         class="video_apresentacao d-flex align-items-center justify-content-center"
         data-aos="fade-up"
       >
@@ -88,390 +88,383 @@
         <h1 class="main_title shadow-lg border-bottom border-danger">
           Vanguard<span class="main_title_2">Motors</span>
         </h1>
-      </div>
+      </section>
 
-      <div class="d-flex align-items-center justify-content-center main_form">
-        <div
-          class="container container-fluid w-100 d-flex align-items-center justify-content-center col-lg"
-        >
-          <form class="row g-3 p-4 w-50 col" data-aos="fade-left">
-            <div class="text-center mt-4">
-              <h3>Encomenda</h3>
-            </div>
-            <div class="row g-3">
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Nome"
-                  aria-label="Nome"
-                  required
-                />
-              </div>
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Sobrenome"
-                  aria-label="Sobrenome"
-                  required
-                />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="inputEmail4"
-                placeholder="pessoa@mail.com"
-                required
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label"
-                >Confirmar Email</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="inputEmail4"
-                placeholder="pessoa@mail.com"
-                required
-              />
-            </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Endereço</label>
+      <!-- FORM -->
+      <section class="container mt-4">
+        <form class="row g-3" data-aos="fade-left">
+          <div class="text-center mt-4">
+            <h3>Encomenda</h3>
+          </div>
+          <div class="row g-3">
+            <div class="col">
               <input
                 type="text"
                 class="form-control"
-                id="inputAddress"
-                placeholder="Endereço Completo"
+                placeholder="Nome"
+                aria-label="Nome"
                 required
               />
             </div>
-
-            <div class="form-floating">
-              <select
-                class="form-select"
-                id="floatingSelect"
-                aria-label="Floating label select example"
-              >
-                <option selected>Escolha o carro</option>
-                <option value="1">Corvette</option>
-                <option value="2">Supra</option>
-                <option value="3">Golf</option>
-                <option value="4">Civic SI</option>
-                <option value="5">Mustang</option>
-                <option value="6">GTR</option>
-              </select>
-              <label for="floatingSelect">Carros</label>
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Sobrenome"
+                aria-label="Sobrenome"
+                required
+              />
             </div>
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="pessoa@mail.com"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Confirmar Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="pessoa@mail.com"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Endereço</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="Endereço Completo"
+              required
+            />
+          </div>
 
-            <div>
-              <button type="button" class="btn btn-primary w-100">
-                Encomendar
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
+          <div class="form-floating">
+            <select
+              class="form-select"
+              id="floatingSelect"
+              aria-label="Floating label select example"
+            >
+              <option selected>Escolha o carro</option>
+              <option value="1">Corvette</option>
+              <option value="2">Supra</option>
+              <option value="3">Golf</option>
+              <option value="4">Civic SI</option>
+              <option value="5">Mustang</option>
+              <option value="6">GTR</option>
+            </select>
+            <label for="floatingSelect">Carros</label>
+          </div>
+
+          <div>
+            <button type="button" class="btn btn-primary w-100">
+              Encomendar
+            </button>
+          </div>
+        </form>
+      </section>
 
       <!-- Carousel Carros-->
-      <div
-        id="carouselExampleAutoplaying"
-        class="container carousel slide carousel_container"
-        data-bs-ride="carousel"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-      >
-        <div class="text-center p-1 m-4">
-          <h3>Carros disponíveis</h3>
-        </div>
+      <section id="carouselExampleAutoplaying" class="container mt-5">
         <div
-          class="carousel-inner shadow-lg"
+          class="carousel"
           data-bs-ride="carousel"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
         >
-          <div class="carousel-item active">
-            <img src="images/supra/Supra.jpg" class="img_cars d-block" />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="images/corvette/corvette-2.jpg"
-              class="img_cars d-block"
-            />
-          </div>
-          <div class="carousel-item">
-            <img src="images/golf/golf.jpg" class="img_cars d-block" />
-          </div>
-          <div class="carousel-item">
-            <img src="images/mustang/mustang-2.jpg" class="img_cars d-block" />
-          </div>
-          <div class="carousel-item">
-            <img src="images/civic/civic-3.jpg" class="img_cars d-block" />
-          </div>
-          <div class="carousel-item">
-            <img src="images/gtr/gtr-2.jpg" class="img_cars d-block" />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+          <header>
+            <h3 class="text-center">Carros disponíveis</h3>
+          </header>
 
-      <!-- Depoimentos -->
-      <div
-        class="container accordion depoimentos_container"
-        id="accordionExample"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-      >
-        <div class="text-center p-1 m-4">
-          <h3 id="area_depoimentos">Depoimentos</h3>
-        </div>
-
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide depoimentos_field"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active btn_indicador"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              class="btn_indicador"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              class="btn_indicador"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
+          <div
+            class="carousel-inner shadow-lg mt-4"
+            data-bs-ride="carousel"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          >
             <div class="carousel-item active">
-              <div
-                class="card d-flex align-items-center justify-content-center bg-dark"
-              >
-                <div class="p-3 card-body card_depoimentos col-lg">
-                  <p class="text-center text_card">
-                    <span>"</span>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Architecto facilis unde vero magni quis
-                    alias consequatur numquam exercitationem in ratione,
-                    inventore nulla velit asperiores quos. Quas vitae mollitia
-                    ab nobis.<span>"</span>
-                  </p>
-                  <div
-                    class="d-flex align-items-center justify-content-center col-lg p-3"
-                  >
-                    <img
-                      src="images/pessoas/pessoa-1.jpg"
-                      class="img_depoimentos object-fit-cover"
-                    />
-                    <h5 class="card-title text_card">Pessoa #1</h5>
-                  </div>
-                </div>
-              </div>
+              <img src="images/supra/Supra.jpg" class="img_cars d-block" />
             </div>
-
             <div class="carousel-item">
-              <div
-                class="card d-flex align-items-center justify-content-center bg-dark"
-              >
-                <div
-                  class="p-3 card-body card_depoimentos d-flex align-items-center justify-content-center col-lg"
-                >
-                  <p class="text-center text_card">
-                    <span>"</span>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Architecto facilis unde vero magni quis
-                    alias consequatur numquam exercitationem in ratione,
-                    inventore nulla velit asperiores quos. Quas vitae mollitia
-                    ab nobis.<span>"</span>
-                  </p>
-                  <div
-                    class="d-flex align-items-center justify-content-center col-lg p-3"
-                  >
-                    <img
-                      src="images/pessoas/pessoa-2.jpg"
-                      class="img_depoimentos object-fit-cover"
-                    />
-                    <h5 class="card-title text_card">Pessoa #2</h5>
-                  </div>
-                </div>
-              </div>
+              <img
+                src="images/corvette/corvette-2.jpg"
+                class="img_cars d-block"
+              />
             </div>
-
             <div class="carousel-item">
-              <div
-                class="card d-flex align-items-center justify-content-center bg-dark"
-              >
-                <div
-                  class="p-3 card-body card_depoimentos d-flex align-items-center justify-content-center col-lg"
-                >
-                  <p class="text-center text_card">
-                    <span>"</span>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Architecto facilis unde vero magni quis
-                    alias consequatur numquam exercitationem in ratione,
-                    inventore nulla velit asperiores quos. Quas vitae mollitia
-                    ab nobis.<span>"</span>
-                  </p>
-                  <div
-                    class="d-flex align-items-center justify-content-center col-lg p-3"
-                  >
-                    <img
-                      src="images/pessoas/pessoa-3.jpg"
-                      class="img_depoimentos object-fit-cover"
-                    />
-                    <h5 class="card-title text_card">Pessoa #3</h5>
-                  </div>
-                </div>
-              </div>
+              <img src="images/golf/golf.jpg" class="img_cars d-block" />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/mustang/mustang-2.jpg"
+                class="img_cars d-block"
+              />
+            </div>
+            <div class="carousel-item">
+              <img src="images/civic/civic-3.jpg" class="img_cars d-block" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/gtr/gtr-2.jpg" class="img_cars d-block" />
             </div>
           </div>
+
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
+
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
+      </section>
+
+      <!-- Depoimentos -->
+      <section
+        id="accordionExample"
+        class="container depoimentos_container mt-5"
+      >
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h3 id="area_depoimentos" class="text-center">Depoimentos</h3>
+
+          <div
+            id="carouselExampleIndicators"
+            class="carousel"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active btn_indicador"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                class="btn_indicador"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                class="btn_indicador"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card bg-dark">
+                  <div class="p-3 card-body card_depoimentos">
+                    <p class="text-center text_card">
+                      <span>"</span>Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Architecto facilis unde vero magni quis
+                      alias consequatur numquam exercitationem in ratione,
+                      inventore nulla velit asperiores quos. Quas vitae mollitia
+                      ab nobis.<span>"</span>
+                    </p>
+                    <div
+                      class="d-flex align-items-center justify-content-center p-3"
+                    >
+                      <img
+                        src="images/pessoas/pessoa-1.jpg"
+                        class="img_depoimentos object-fit-cover"
+                      />
+                      <h5 class="card-title text_card">Pessoa #1</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card bg-dark">
+                  <div class="p-3 card-body card_depoimentos">
+                    <p class="text-center text_card">
+                      <span>"</span>Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Architecto facilis unde vero magni quis
+                      alias consequatur numquam exercitationem in ratione,
+                      inventore nulla velit asperiores quos. Quas vitae mollitia
+                      ab nobis.<span>"</span>
+                    </p>
+
+                    <div
+                      class="d-flex align-items-center justify-content-center p-3"
+                    >
+                      <img
+                        src="images/pessoas/pessoa-2.jpg"
+                        class="img_depoimentos object-fit-cover"
+                      />
+                      <h5 class="card-title text_card">Pessoa #2</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card bg-dark">
+                  <div class="p-3 card-body card_depoimentos">
+                    <p class="text-center text_card">
+                      <span>"</span>Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Architecto facilis unde vero magni quis
+                      alias consequatur numquam exercitationem in ratione,
+                      inventore nulla velit asperiores quos. Quas vitae mollitia
+                      ab nobis.<span>"</span>
+                    </p>
+                    <div
+                      class="d-flex align-items-center justify-content-center p-3"
+                    >
+                      <img
+                        src="images/pessoas/pessoa-3.jpg"
+                        class="img_depoimentos object-fit-cover"
+                      />
+                      <h5 class="card-title text_card">Pessoa #3</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
 
       <!-- Sobre Nós -->
-      <div
-        class="text-center"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-      >
-        <h3 id="area_sobre">Sobre nós</h3>
-      </div>
+      <section class="container mt-4">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h3 id="area_sobre" class="text-center">Sobre nós</h3>
+        </div>
 
-      <div id="about-us" class="" data-aos="fade-right">
-        <div class="col d-flex justify-content-center">
-          <div class="card shadow-lg w-100 card_sobre">
-            <img
-              src="images/sobre/localizacao.jpg"
-              class="card-img-top about-us__card__image object-fit-cover"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Cidade Sede da nossa empresa</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                ducimus voluptatem qui. Quasi mollitia ad inventore iure
-                adipisci ipsum vel assumenda sunt veritatis voluptate iusto
-                facilis magni, architecto, nostrum quod!
-              </p>
+        <div id="about-us" class="row g-5 mt-1" data-aos="fade-right">
+          <div class="col-lg-6">
+            <div class="card shadow-lg card_sobre">
+              <img
+                src="images/sobre/localizacao.jpg"
+                class="card-img-top about-us__card__image object-fit-cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cidade Sede da nossa empresa</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  ducimus voluptatem qui. Quasi mollitia ad inventore iure
+                  adipisci ipsum vel assumenda sunt veritatis voluptate iusto
+                  facilis magni, architecto, nostrum quod!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="card shadow-lg card_sobre">
+              <img
+                src="images/sobre/servicos.jpg"
+                class="card-img-top about-us__card__image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Serviços</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  ducimus voluptatem qui. Quasi mollitia ad inventore iure
+                  adipisci ipsum vel assumenda sunt veritatis voluptate iusto
+                  facilis magni, architecto, nostrum quod!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="card shadow-lg card_sobre">
+              <img
+                src="images/sobre/equipe.jpg"
+                class="card-img-top about-us__card__image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nossa equipe</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  ducimus voluptatem qui. Quasi mollitia ad inventore iure
+                  adipisci ipsum vel assumenda sunt veritatis voluptate iusto
+                  facilis magni, architecto, nostrum quod!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="card shadow-lg card_sobre">
+              <img
+                src="images/sobre/beneficios.jpeg"
+                class="card-img-top about-us__card__image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Benefícios</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
+                  tenetur explicabo corporis dolor, sapiente laborum ducimus ex,
+                  ratione enim incidunt facere suscipit mollitia assumenda
+                  placeat perferendis ut libero
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col d-flex justify-content-center" data-aos="fade-left">
-          <div class="card shadow-lg w-100 card_sobre">
-            <img
-              src="images/sobre/servicos.jpg"
-              class="card-img-top about-us__card__image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Serviços</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                ducimus voluptatem qui. Quasi mollitia ad inventore iure
-                adipisci ipsum vel assumenda sunt veritatis voluptate iusto
-                facilis magni, architecto, nostrum quod!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col d-flex justify-content-center" data-aos="fade-right">
-          <div class="card shadow-lg w-100 card_sobre">
-            <img
-              src="images/sobre/equipe.jpg"
-              class="card-img-top about-us__card__image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Nossa equipe</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                ducimus voluptatem qui. Quasi mollitia ad inventore iure
-                adipisci ipsum vel assumenda sunt veritatis voluptate iusto
-                facilis magni, architecto, nostrum quod!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col d-flex justify-content-center" data-aos="fade-left">
-          <div class="card shadow-lg w-100 card_sobre">
-            <img
-              src="images/sobre/beneficios.jpeg"
-              class="card-img-top about-us__card__image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Benefícios</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
-                tenetur explicabo corporis dolor, sapiente laborum ducimus ex,
-                ratione enim incidunt facere suscipit mollitia assumenda placeat
-                perferendis ut libero
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
 
       <!-- Modelos de Carros -->
+      <section id="cars_estoque" class="container mt-5">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h2 class="text-center">Nosso Estoque</h2>
+        </div>
 
-      <div
-        class="text-center m-4 p-2"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-      >
-        <h1>Nosso Estoque</h1>
-      </div>
-
-      <div id="cars_estoque" class="container">
-        <div class="row g-4">
+        <div class="row g-4 mt-4">
           <!-- Corvette -->
-          <div class="col-lg" data-aos="fade-right">
+          <div class="col-lg-6" data-aos="fade-right">
             <h1 class="text-center">Corvette</h1>
 
             <div id="carouselExampleCaptions" class="carousel slide mt-4">
@@ -637,8 +630,8 @@
           </div>
 
           <!-- Supra -->
-          <div class="col-lg" data-aos="fade-left">
-            <h1>Supra</h1>
+          <div class="col-lg-6" data-aos="fade-left">
+            <h1 class="text-center">Supra</h1>
 
             <div id="carouselExampleCaptions1" class="carousel slide mt-4">
               <div class="carousel-indicators">
@@ -773,7 +766,7 @@
               </button>
             </div>
 
-            <ul class="list-group mt-4">
+            <ul class="list-group mt-4 text-center">
               <li class="list-group-item fs-3">Toyota</li>
               <li class="list-group-item">Supra</li>
               <li class="list-group-item">2023</li>
@@ -804,8 +797,8 @@
           </div>
 
           <!-- GOLF -->
-          <div class="col-lg" data-aos="fade-right">
-            <h1>Golf MK7</h1>
+          <div class="col-lg-6" data-aos="fade-right">
+            <h1 class="text-center">Golf MK7</h1>
 
             <div id="carouselExampleCaptions2" class="carousel slide mt-4">
               <div class="carousel-indicators">
@@ -940,7 +933,7 @@
               </button>
             </div>
 
-            <ul class="list-group mt-4">
+            <ul class="list-group mt-4 text-center">
               <li class="list-group-item fs-3">Volkswagen</li>
               <li class="list-group-item">Golf MK-7 GTI</li>
               <li class="list-group-item">2023</li>
@@ -971,8 +964,8 @@
           </div>
 
           <!-- CIVIC -->
-          <div class="col-lg" data-aos="fade-left">
-            <h1>Civic SI</h1>
+          <div class="col-lg-6" data-aos="fade-left">
+            <h1 class="text-center">Civic SI</h1>
 
             <div id="carouselExampleCaptions3" class="carousel slide mt-4">
               <div class="carousel-indicators">
@@ -1107,7 +1100,7 @@
               </button>
             </div>
 
-            <ul class="list-group mt-4">
+            <ul class="list-group mt-4 text-center">
               <li class="list-group-item fs-3">Honda</li>
               <li class="list-group-item">Civic SI</li>
               <li class="list-group-item">2023</li>
@@ -1138,8 +1131,8 @@
           </div>
 
           <!-- MUSTANG -->
-          <div class="col-lg" data-aos="fade-right">
-            <h1>Mustang</h1>
+          <div class="col-lg-6" data-aos="fade-right">
+            <h1 class="text-center">Mustang</h1>
 
             <div id="carouselExampleCaptions4" class="carousel slide mt-4">
               <div class="carousel-indicators">
@@ -1274,7 +1267,7 @@
               </button>
             </div>
 
-            <ul class="list-group mt-4">
+            <ul class="list-group mt-4 text-center">
               <li class="list-group-item fs-3">Ford</li>
               <li class="list-group-item">Mustang</li>
               <li class="list-group-item">2023</li>
@@ -1305,8 +1298,8 @@
           </div>
 
           <!-- NISSAN GTR -->
-          <div class="col-lg" data-aos="fade-left">
-            <h1>GTR</h1>
+          <div class="col-lg-6" data-aos="fade-left">
+            <h1 class="text-center">GTR</h1>
 
             <div id="carouselExampleCaptions5" class="carousel slide mt-4">
               <div class="carousel-indicators">
@@ -1441,7 +1434,7 @@
               </button>
             </div>
 
-            <ul class="list-group mt-4">
+            <ul class="list-group mt-4 text-center">
               <li class="list-group-item fs-3">Nissan</li>
               <li class="list-group-item">GT-R</li>
               <li class="list-group-item">2023</li>
@@ -1471,7 +1464,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <!-- Footer -->
